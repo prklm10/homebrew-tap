@@ -13,17 +13,17 @@ class Contextrecall < Formula
     if Hardware::CPU.intel?
       # Intel Mac
       url "https://github.com/prklm10/contextrecall/releases/download/v#{version}/contextrecall-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 'sha256:919e683116ded25b4ad372ba0ddcea8a3991a546b0ec243043487519e91ffead'
+      sha256 '919e683116ded25b4ad372ba0ddcea8a3991a546b0ec243043487519e91ffead'
     elsif Hardware::CPU.arm?
       # Apple Silicon (M1/M2/M3) Mac
       url "https://github.com/prklm10/contextrecall/releases/download/v#{version}/contextrecall-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 'sha256:fd9fe57deedf0aa68877b504ac2085e239a7d207bbb32d172646ad02acecb741'
+      sha256 'fd9fe57deedf0aa68877b504ac2085e239a7d207bbb32d172646ad02acecb741'
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       # Linux (x86_64)
       url "https://github.com/prklm10/contextrecall/releases/download/v#{version}/contextrecall-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 'sha256:23e25a25467ee3551f9bc58318fcd3269d55a9e2ba8fd37e4b0632aebd085a44'
+      sha256 '23e25a25467ee3551f9bc58318fcd3269d55a9e2ba8fd37e4b0632aebd085a44'
     end
   end
 
